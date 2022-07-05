@@ -20,6 +20,10 @@ var aEdit = document.getElementsByTagName("a");
     aEdit[0].setAttribute("target", "_blank");
 
 
+var titleEdit = document.getElementsByTagName("title");
+    titleEdit[0].textContent = "Basic JS Calculator";
+
+
 function additionCalc() {
     firstAddRes = prompt("enter first addend here");
     secondAddRes = prompt("enter second addend here");
