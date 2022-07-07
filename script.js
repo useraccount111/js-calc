@@ -1,6 +1,6 @@
-var stuff = document.createElement("div");
-    stuff.innerHTML = "<h1>this is a calculator *decimals do not work except on square root button*</h1><br><br><br><br><button>click this for addition calculator</button><br><br><button>click this for subtraction calculator</button><br><br><button>click this for multiplication calculator</button><br><br><button>click this for divison calculator</button><br><br><button>click to find square root of number</button><br><br><br><p>btw if u get NaN as an answer, you didn't enter numbers properly enter just number and nothing else</p><br><br><p>luqmaan made this basic calculator, this has no copyright do whatever the #### you want tbh i don't really care, since this is so basic there's no such thing as 'plagiarism' in this case, and also i left the source code unobfuscated so yeah edit and copy whatever you need <a>here</a></p>"
-    document.body.appendChild(stuff);
+var calculatorBody = document.createElement("div");
+    calculatorBody.innerHTML = "<h1>this is a calculator *decimals do not work except on square root button*</h1><br><br><br><br><button>click this for addition calculator</button><br><br><button>click this for subtraction calculator</button><br><br><button>click this for multiplication calculator</button><br><br><button>click this for divison calculator</button><br><br><button>click to find square root of number</button><br><br><br><p>btw if u get NaN as an answer, you didn't enter numbers properly enter just number and nothing else</p><br><br><p>luqmaan made this basic calculator, this has no copyright do whatever the #### you want tbh i don't really care, since this is so basic there's no such thing as 'plagiarism' in this case, and also i left the source code unobfuscated so yeah edit and copy whatever you need <a>here</a></p>"
+    document.body.appendChild(calculatorBody);
 
 var buttonEdit = document.getElementsByTagName("button");
     buttonEdit[0].setAttribute("onclick", "additionCalc()");
@@ -28,7 +28,9 @@ function additionCalc() {
     firstAddRes = prompt("enter first addend here");
     secondAddRes = prompt("enter second addend here");
     
-    if (firstAddRes == "" || secondAddRes == "") {alert("Please enter proper values.");}
+    if (firstAddRes == "" || secondAddRes == "") {
+        alert("Please enter proper values.");
+    }
     
     var firstAddRes = parseInt(firstAddRes);
     var secondAddRes = parseInt(secondAddRes);
@@ -43,7 +45,9 @@ function subCalc() {
     firstSubRes = prompt("enter minuend here");
     secondSubRes = prompt("enter subtrahend here");
     
-    if (firstSubRes == "" || secondSubRes == "") {alert("Please enter proper values.");}
+    if (firstSubRes == "" || secondSubRes == "") {
+        alert("Please enter proper values.");
+    }
     
     var firstSubRes = parseInt(firstSubRes);
     var secondSubRes = parseInt(secondSubRes);
@@ -57,7 +61,9 @@ function multCalc() {
     firstMultRes = prompt("enter multiplicand here");
     secondMultRes = prompt("enter multiplier here");
     
-    if (firstMultRes == "" || secondMultRes == "") {alert("Please enter proper values.");}
+    if (firstMultRes == "" || secondMultRes == "") {
+        alert("Please enter proper values.");
+    }
     
     var firstMultRes = parseInt(firstMultRes);
     var secondMultRes = parseInt(secondMultRes);
@@ -70,7 +76,9 @@ function divCalc() {
     firstDivRes = prompt("enter dividend here");
     secondDivRes = prompt("enter divisor here");
     
-    if (firstDivRes == "" || secondDivRes == "") {alert("Please enter proper values.");}
+    if (firstDivRes == "" || secondDivRes == "") {
+        alert("Please enter proper values.");
+    }
     
     var firstDivRes = parseInt(firstDivRes);
     var secondDivRes = parseInt(secondDivRes);
@@ -83,7 +91,9 @@ function sqrtCalc() {
 
     sqrtInput = prompt("enter number u wanna square root here");
     
-    if (sqrtInput == "") {alert("Please enter a proper value.");}
+    if (sqrtInput == "") {
+        alert("Please enter a proper value.");
+    }
 
     sqrtInput = parseInt(sqrtInput);
 
