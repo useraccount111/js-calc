@@ -30,14 +30,15 @@ function additionCalc() {
     
     if (firstAddRes == "" || secondAddRes == "") {
         alert("Please enter proper values.");
+    } else {
+        
+        var firstAddRes = parseInt(firstAddRes);
+        var secondAddRes = parseInt(secondAddRes);
+        
+        var addResult = firstAddRes+=secondAddRes;
+        alert("Your sum is " + addResult + ".");
+        
     }
-    
-    var firstAddRes = parseInt(firstAddRes);
-    var secondAddRes = parseInt(secondAddRes);
-
-    var addResult = firstAddRes+=secondAddRes;
-    alert("Your sum is " + addResult + ".");
-    
 
 }
 
@@ -47,13 +48,14 @@ function subCalc() {
     
     if (firstSubRes == "" || secondSubRes == "") {
         alert("Please enter proper values.");
+    } else {
+        
+        var firstSubRes = parseInt(firstSubRes);
+        var secondSubRes = parseInt(secondSubRes);
+        
+        var subResult = firstSubRes-=secondSubRes;
+        alert("Your difference is " + subResult + ".");
     }
-    
-    var firstSubRes = parseInt(firstSubRes);
-    var secondSubRes = parseInt(secondSubRes);
-
-    var subResult = firstSubRes-=secondSubRes;
-    alert("Your difference is " + subResult + ".");
 
 }
 
@@ -63,13 +65,14 @@ function multCalc() {
     
     if (firstMultRes == "" || secondMultRes == "") {
         alert("Please enter proper values.");
+    } else {
+        
+        var firstMultRes = parseInt(firstMultRes);
+        var secondMultRes = parseInt(secondMultRes);
+        
+        var multResult = firstMultRes*=secondMultRes;
+        alert("Your product is " + multResult + ".");
     }
-    
-    var firstMultRes = parseInt(firstMultRes);
-    var secondMultRes = parseInt(secondMultRes);
-
-    var multResult = firstMultRes*=secondMultRes;
-    alert("Your product is " + multResult + ".");
 }
 
 function divCalc() {
@@ -78,13 +81,14 @@ function divCalc() {
     
     if (firstDivRes == "" || secondDivRes == "") {
         alert("Please enter proper values.");
+    } else {
+        
+        var firstDivRes = parseInt(firstDivRes);
+        var secondDivRes = parseInt(secondDivRes);
+        
+        var divResult = firstDivRes/=secondDivRes;
+        alert("Your quotient is " + divResult + ".");
     }
-    
-    var firstDivRes = parseInt(firstDivRes);
-    var secondDivRes = parseInt(secondDivRes);
-
-    var divResult = firstDivRes/=secondDivRes;
-    alert("Your quotient is " + divResult + ".");
 }
 
 function sqrtCalc() {
@@ -93,12 +97,14 @@ function sqrtCalc() {
     
     if (sqrtInput == "") {
         alert("Please enter a proper value.");
+    } else {
+        
+        sqrtInput = parseInt(sqrtInput);
+        
+        var sqrtResult = Math.sqrt(sqrtInput);
+        
+        alert("Your answer is " + sqrtResult + ".");
+        
     }
-
-    sqrtInput = parseInt(sqrtInput);
-
-    var sqrtResult = Math.sqrt(sqrtInput);
-
-    alert("Your answer is " + sqrtResult + ".");
 
 }
