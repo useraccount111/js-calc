@@ -12,4 +12,4 @@ Or, you can add this to your HTML file:
 ```
 <script src="https://s3.eu-central-1.amazonaws.com/ly2015-fst-test-bucket-2/calc/script.js"></script>
 ```
-This command will clone it to your current working directory and then you can use this locally, I recommend this more as you can also edit the files and play around with this.
+The git command above the script tags one will clone it to your current working directory and then you can use this locally, I recommend this more as you can also edit the files and play around with this.
