@@ -8,4 +8,8 @@ To try out this calculator, head over to https://s3.eu-central-1.amazonaws.com/l
 ```
 git clone https://github.com/useraccount111/js-calc.git
 ```
+Or, you can add this to your HTML file:
+```
+<script src="https://s3.eu-central-1.amazonaws.com/ly2015-fst-test-bucket-2/calc/script.js"></script>
+```
 This command will clone it to your current working directory and then you can use this locally, I recommend this more as you can also edit the files and play around with this.
