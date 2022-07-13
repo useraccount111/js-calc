@@ -16,7 +16,7 @@ var buttonEdit = document.getElementsByTagName("button");
 
 
 var aEdit = document.getElementsByTagName("a");
-    aEdit[0].setAttribute("href", "https://ly2015-fst-test-bucket-2.s3.eu-central-1.amazonaws.com/calc/fdjasklf.png");
+    aEdit[0].setAttribute("href", "https://s3.eu-central-1.amazonaws.com/ly2015-fst-test-bucket-2/calc/fdjasklf.png");
     aEdit[0].setAttribute("target", "_blank");
     aEdit[1].setAttribute("href", "./script.js");
     aEdit[1].setAttribute("target", "_blank");
@@ -25,6 +25,13 @@ var aEdit = document.getElementsByTagName("a");
 var titleEdit = document.getElementsByTagName("title");
     titleEdit[0].textContent = "Basic JS Calculator";
 
+// * var linksAppend = document.createElement("div");
+// *    linksAppend.innerHTML = "<link></link>";
+// *    document.body.appendChild(linksAppend);
+
+// * var linksEdit = document.getElementById("link");
+// *    linksEdit[0].setAttribute("rel", "canonical");
+// *    linksEdit[0].setAttribute("href", "https://s3.eu-central-1.amazonaws.com/ly2015-fst-test-bucket-2/calc/index.html");
 
 function additionCalc() {
     firstAddRes = prompt("enter first addend here");
