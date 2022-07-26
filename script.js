@@ -3,7 +3,7 @@ var calculatorBody = document.createElement("div");
     document.body.appendChild(calculatorBody);
 
 var buttonEdit = document.getElementsByTagName("button");
-    buttonEdit[0].setAttribute("onclick", "additionCalc()");
+    buttonEdit[0].setAttribute("onclick", "addCalc()");
     buttonEdit[0].setAttribute("type", "button");
     buttonEdit[1].setAttribute("onclick", "subCalc()");
     buttonEdit[1].setAttribute("type", "button");
@@ -33,7 +33,7 @@ var titleEdit = document.getElementsByTagName("title");
 // *    linksEdit[0].setAttribute("rel", "canonical");
 // *    linksEdit[0].setAttribute("href", "https://s3.eu-central-1.amazonaws.com/ly2015-fst-test-bucket-2/calc/index.html");
 
-function additionCalc() {
+const addCalc = () => {
     firstAddRes = prompt("enter first addend here");
     secondAddRes = prompt("enter second addend here");
     
@@ -51,7 +51,7 @@ function additionCalc() {
 
 }
 
-function subCalc() {
+const subCalc = () => {
     firstSubRes = prompt("enter minuend here");
     secondSubRes = prompt("enter subtrahend here");
     
@@ -68,7 +68,7 @@ function subCalc() {
 
 }
 
-function multCalc() {
+const multCalc = () => {
     firstMultRes = prompt("enter multiplicand here");
     secondMultRes = prompt("enter multiplier here");
     
@@ -84,7 +84,7 @@ function multCalc() {
     }
 }
 
-function divCalc() {
+const divCalc = () => {
     firstDivRes = prompt("enter dividend here");
     secondDivRes = prompt("enter divisor here");
     
@@ -100,7 +100,7 @@ function divCalc() {
     }
 }
 
-function sqrtCalc() {
+const sqrtCalc = () => {
 
     sqrtInput = prompt("enter number u wanna square root here");
     
